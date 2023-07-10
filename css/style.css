@@ -88,11 +88,13 @@
     color: white;
     font-size: small;
     text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .footer .p1 {
     font-size: large;
     margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .footer .img-2 {
