@@ -82,7 +82,7 @@
 }
 
 @media (max-width: 606px) {
-    div .row {
+    .main-inicio .row {
         display: flex;
         flex-direction: column;
     }
