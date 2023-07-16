@@ -23,12 +23,14 @@
     text-transform: uppercase;
     padding: 20px;
 }
+
 .header a {
     color: white;
     font-size: large;
     text-decoration: none;
 }
-.header .ul{
+
+.header .ul {
     display: flex;
     list-style-type: none;
     align-items: center;
@@ -37,6 +39,14 @@
     width: 500px;
     height: 20px;
     flex-wrap: wrap;
+}
+
+@media (max-width: 606px) {
+    .header .ul {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
 }
 
 /* ----MAIN---- */
@@ -70,6 +80,25 @@
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 606px) {
+    div .row {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1000px) {
+    .main-inicio .h2-1 {
+        padding: 200px;
+    }
+}
+@media (max-width: 560px) {
+    .main-inicio .h2-1 {
+        padding: 100px;
+    }
+}
+
 
 /* ----FOOTER---- */
 
@@ -130,6 +159,7 @@
     margin-top: 5px;
     font-size: 20px;
 }
+
 .main-especialidades span {
     font-weight: bold;
     text-decoration: underline;
@@ -141,7 +171,8 @@
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
-.main-especialidades h3{
+
+.main-especialidades h3 {
     margin: 0px;
 }
 
@@ -157,16 +188,19 @@
     font-size: 40px;
     text-align: center;
 }
-.main-turnos input{
+
+.main-turnos input {
     text-align: center;
     padding: 10px;
     margin: 5px;
 }
-.main-turnos form{
+
+.main-turnos form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 /* ----MAIN CONTACTO---- */
 
 .main-contacto {
@@ -200,10 +234,12 @@
     font-size: 40px;
     text-align: center;
 }
-.main-otroscentros article{
+
+.main-otroscentros article {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
 .main-otroscentros section {
     padding: 20px;
     margin-top: 5px;
@@ -215,10 +251,19 @@
     text-decoration: underline;
 }
 
-a:hover{
+@media (max-width: 606px) {
+    .main-otroscentros article {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: auto;
+    }
+}
+
+a:hover {
     color: darkolivegreen;
 }
-input:focus{
+
+input:focus {
     background-color: darkgrey;
     border-radius: 7px;
 }
